@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-CS">
+
+<head>
+    <title>Veterinarski sajt - Proizvod 3</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Veterinarski sajt - Proizvod 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#modal").load("modal.html");
+        });
+    </script>
+    <script src="funkcije.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <!-- HEADER -->
+    <!-- MODAL -->
+    <div id="modal"></div>
+    <!-- MODAL -->
+
+    <!-- BODY -->
+    <div class="body">
+        <div class="container emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4 col-centered">
+                        <div class="profile-img col-centered">
+                            <img src="images/avatar.JPG" alt="" />
+                            <div class="file btn btn-lg btn-primary">
+                                Promeni sliku
+                                <input type="file" name="file" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="profile-head">
+                            <h5>
+                                Ivan Maric
+                            </h5>
+                            <h6>
+                                Administrator
+                            </h6>
+                            <p>Zdravo, Ivan. Odavde možete pregledati vaše porudžbine, kao i pregledati online karton vašeg ljubimca...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam ullamcorper nibh, nec dapibus nibh semper vel. Cras
+                                vulputate mi et rhoncus volutpat. Duis fringilla arcu id purus vestibulum, et laoreet odio pulvinar. Duis tristique imperdiet sodales. Sed nec condimentum sapien. Nulla facilisis ex a arcu aliquam, eu malesuada magna eleifend.
+                                Fusce euismod mauris arcu, in facilisis ex blandit ut..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-work">
+                            <p>MENI</p>
+                            <a href="">Porudžbine</a><br/>
+                            <a href="">Online karton</a><br/>
+                            <a href="">Adrese</a><br/>
+                            <a href="">Detalji naloga</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active tabela" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>ID</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>000001</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Ime</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Ivan</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>imaric15@raf.rs</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Telefon</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>011/351-26-54
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Profesija</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- BODY -->
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <!-- FOOTER -->
+</body>
+
+</html>

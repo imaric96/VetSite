@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-CS">
+
+<head>
+    <title>Veterinarski sajt - Proizvod 3</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Veterinarski sajt - Proizvod 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#modal").load("modal.html");
+        });
+    </script>
+    <script src="funkcije.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <!-- HEADER -->
+    <!-- MODAL -->
+    <div id="modal"></div>
+    <!-- MODAL -->
+
+    <!-- BODY -->
+    <div class="body">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <!-- Breadcrumb-->
+                    <div class="mr-auto">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Početna</a></li>
+                                <li class="breadcrumb-item"><a href="shop.html">Prodavnica</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Proizvod 3</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3 col-centered-text-bez-paddinga">
+                        <img src="images/products/product-3.jpg" alt="..." class="img-thumbnail">
+                    </div>
+                    <div class="col-md-9 proizvod">
+                        <h2 class="proizvod-naslov">Naslov 3</h2>
+                        <p class="proizvod-tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sapien auctor lectus auctor commodo vitae a urna. Nam luctus, leo et ornare elementum, dolor erat ultricies nunc, id accumsan velit felis tincidunt risus. Nulla.</p>
+                        <h5>3499,99 RSD/kom</h5>
+                        <br>
+                        <div class="form-group row">
+                            <label for="example-number-input" class="col-md-2 col-form-label col-centered-text-bez-paddinga">Količina:</label>
+                            <div class="col-md-2 col-centered-text-bez-paddinga">
+                                <input class=" form-control" type="number" value="1" min="0" id="example-number-input">
+                            </div>
+                            <div class="col-md-3 col-centered-text-bez-paddinga">
+                                <button type="button" class="btn btn-primary ">Dodaj u korpu</button>
+                            </div>
+                            <div class="col-md-7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <img src="images/reklama.jpg" class="img-thumbnail" alt="reklama">
+            </div>
+        </div>
+    </div>
+    <!-- BODY -->
+
+    <!-- FOOTER -->
+    <div id="footer "></div>
+    <!-- FOOTER -->
+</body>
+
+</html>

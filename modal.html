@@ -1,0 +1,113 @@
+<!-- MODAL -->
+<div id="modal-prijava" class="modal fade ">
+    <div class="modal-dialog modal-login ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title ">Prijava</h4>
+                <button type="button" id="close-modal" class="close" data-dismiss="modal" aria-hidden="true" onclick="resetujFormu()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="form-prijava">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope fa-2x"></i></span>
+                        </div>
+                        <input type="email" required class="form-control" placeholder="Email" id="modal_input" name="email">
+                    </div>
+                    <div class="input-group mb-3 sifra">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text sifra-ikonica"><i class="fa fa-lock fa-2x"></i></i></span>
+                        </div>
+                        <input type="password" required class="form-control" placeholder="Šifra" id="modal_input" name="sifra">
+                    </div>
+                    <input type="submit" class="btn btn-primary" id="submitButton" value="Prijavi se">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p>Niste korisnik? <a href="#modal-registracija" class="trigger-btn" data-toggle="modal" data-dismiss="modal"><b>Registrujte se</b></a>
+                    <br>Zaboravljena lozinka? <a href="#modal-reset" class="trigger-btn" data-toggle="modal" data-dismiss="modal"><b>Resetuj</b></a>
+                    <p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL -->
+
+<div id="modal-registracija" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h4 class="modal-title ">Registracija</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="resetujFormu()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="form-registracija">
+                    <div class="input-group mb-3 sifra">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user fa-2x"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Ime" id="modal_input" name="firstname">
+                    </div>
+                    <div class="input-group mb-3 sifra">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user fa-2x fa-2x"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Prezime" id="modal_input" name="lastname">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope fa-2x"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" id="modal_input" name="email">
+                    </div>
+                    <div class="input-group mb-3 sifra">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text sifra-ikonica"><i class="fa fa-lock fa-2x"></i></i></span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Šifra" id="modal_input" name="sifra">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Registruj se">
+                    <div class="modal-footer">
+                        <p>Već imate nalog? <a href="#modal-prijava" class="trigger-btn" data-toggle="modal" data-dismiss="modal"><b>Prijavi se</b></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-reset" class="modal fade ">
+    <div class="modal-dialog modal-login ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title ">Resetovanje</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="resetujFormu()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="form-resetovanje">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope fa-2x"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" id="modal_input" name="email">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Resetuj">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p>Niste korisnik? <a href="#modal-registracija" class="trigger-btn" data-toggle="modal" data-dismiss="modal"><b>Registrujte se</b></a>
+                    <br>Već imate nalog? <a href="#modal-prijava" class="trigger-btn" data-toggle="modal" data-dismiss="modal"><b>Prijavi se</b></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function redirect(ele) {
+        if (event.key === 'Enter') {
+            if (ele.value === 'google')
+                window.location.href = 'https://google.com';
+            else
+                alert("Invalid");
+        }
+    }
+</script>
+<!-- MODAL -->

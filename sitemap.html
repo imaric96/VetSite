@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-CS">
+
+<head>
+    <title>Veterinarski sajt - Mapa sajta</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Veterinarski sajt - Mapa sajta">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#modal").load("modal.html");
+        });
+    </script>
+    <script src="funkcije.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <!-- HEADER -->
+    <!-- MODAL -->
+    <div id="modal"></div>
+    <!-- MODAL -->
+
+
+    <!-- BODY -->
+    <div class="body">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <!-- Breadcrumb-->
+                    <div class="mr-auto">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Početna</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Mapa sajta</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 proizvod-naslov">
+                    <h3>Stranice:</h3>
+                    <ul>
+                        <li><a href="index.html"><strong>Početna</strong></a></li>
+                        <li><a href="shop.html"><strong>Prodavnica</strong></a></li>
+                        <ul>
+                            <li><a href="proizvod-3.html">Proizvod 3</a></li>
+                        </ul>
+                        <li><a href="services.html"><strong>Usluge</strong></a></li>
+                        <li><a href="team.html"><strong>Naši doktori</strong></a></li>
+                        <li><a href="blog.html"><strong>Blog</strong></a></li>
+                        <li><a href="faq.html"><strong>FAQ</strong></a></li>
+                        <li><a href="about-us.html"><strong>O nama</strong></a></li>
+                        <li><a href="contact.html"><strong>Kontakt</strong></a></li>
+                        <li><a href="my-account.html"><strong>Moj nalog</strong></a></li>
+                        <li><a href="sitemap.html"><strong>Mapa sajta</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BODY -->
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <!-- FOOTER -->
+</body>
+
+</html>
